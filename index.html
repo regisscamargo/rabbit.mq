@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+
+        <!-- Login Form -->
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Edit User Form -->
+        <section id="edit-user-section" style="display: none;">
+            <h2>Edit User</h2>
+            <form id="edit-user-form">
+                <label for="edit-username">Username:</label>
+                <input type="text" id="edit-username" name="edit-username" required>
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="edit-email" required>
+                <button type="submit">Save</button>
+            </form>
+        </section>
+
+        <!-- Show User Information -->
+        <section id="show-user-section" style="display: none;">
+            <h2>User Information</h2>
+            <p><strong>Username:</strong> <span id="show-username"></span></p>
+            <p><strong>Email:</strong> <span id="show-email"></span></p>
+            <button id="edit-user-button">Edit User</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
